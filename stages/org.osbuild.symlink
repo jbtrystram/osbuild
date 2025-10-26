@@ -13,7 +13,7 @@ def main(args, options):
         src = path["source"]
         link = parsing.parse_location(path["link"], args)
 
-        print(f"linking'{link}' -> '{src}'")
+        print(f"linking '{link}' -> '{src}'")
         os.symlink(src, link)
 
     return 0
